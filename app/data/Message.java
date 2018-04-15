@@ -2,8 +2,9 @@ package data;
 
 public class Message {
     public String Text;
-    public FeedResponse feedResponse= new FeedResponse();
-    public Sender sender;
+    public FeedResponse feedResponse;
     public enum Sender {USER,BOT};
+    public Sender sender;
+
 
 }
