@@ -7,6 +7,7 @@ body {
 }
 
 #message-pane {
+    background-image: url("/assets/images/7.png");
     background-color: #d6d0cf;
 }
 

@@ -1,5 +1,11 @@
 var app = angular.module('chatApp', ['ngMaterial']);
 
+app.config(function ($mdThemingProvider) {
+    $mdThemingProvider.theme('default')
+        .primaryPalette('purple')
+        .accentPalette('green');
+});
+
 app.controller('chatController', function ($scope) {
     $scope.messages = [
         {
@@ -8,15 +14,15 @@ app.controller('chatController', function ($scope) {
 	},
         {
             'sender': 'BOT',
-            'text': ' kya h be ???'
+            'text': 'Hi, what can  i do for you ????'
 	},
         {
             'sender': 'USER',
-            'text': 'Beta tumse naa ho payega'
+            'text': 'Wake me up after 15hrs'
 	},
         {
             'sender': 'BOT',
-            'text': 'Aise kaise be !'
+            'text': 'Done !'
 	}
 
 	];
